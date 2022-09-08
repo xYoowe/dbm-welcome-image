@@ -84,7 +84,7 @@
       "x": "507",
       "y": "440",
       "fontPath": "fonts/UniSansHeavy.otf",
-      "fontColor": "ffa700",
+      "fontColor": "FFFFFF",
       "fontSize": "45px",
       "align": "4",
       "text": "Jest nas już ${tempVars(\"members\")} osób!",
