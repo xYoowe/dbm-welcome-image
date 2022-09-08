@@ -1,0 +1,106 @@
+{
+  "name": "Welcome Image",
+  "temp": "member",
+  "event-type": "6",
+  "_id": "LtIQG",
+  "actions": [
+    {
+      "member": "2",
+      "varName": "member",
+      "info": "21",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "member",
+      "info": "16",
+      "storage": "1",
+      "varName2": "avatar_url",
+      "name": "Store Member Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "17",
+      "storage": "1",
+      "varName2": "members",
+      "name": "Store Server Info"
+    },
+    {
+      "url": "resources/background.png",
+      "storage": "1",
+      "varName": "welcome",
+      "name": "Canvas Create Image"
+    },
+    {
+      "url": "${tempVars(\"avatar_url\")}",
+      "storage": "1",
+      "varName": "avatar",
+      "name": "Canvas Create Image"
+    },
+    {
+      "storage": "1",
+      "varName": "avatar",
+      "circleinfo": "1",
+      "radius": "0",
+      "name": "Canvas Edit Image Border"
+    },
+    {
+      "storage": "1",
+      "varName": "avatar",
+      "mirror": "0",
+      "rotation": "0",
+      "width": "256",
+      "height": "256",
+      "name": "Canvas Image Options"
+    },
+    {
+      "storage": "1",
+      "varName": "welcome",
+      "storage2": "1",
+      "varName2": "avatar",
+      "x": "384",
+      "y": "40",
+      "effect": "0",
+      "name": "Canvas Draw Image on Image"
+    },
+    {
+      "storage": "1",
+      "varName": "welcome",
+      "x": "507",
+      "y": "395",
+      "fontPath": "fonts/UniSansHeavy.otf",
+      "fontColor": "FFFFFF",
+      "fontSize": "55px",
+      "align": "4",
+      "text": "${tempVars(\"username\")}",
+      "name": "Canvas Draw Text on Image"
+    },
+    {
+      "storage": "1",
+      "varName": "welcome",
+      "x": "507",
+      "y": "440",
+      "fontPath": "fonts/UniSansHeavy.otf",
+      "fontColor": "ffa700",
+      "fontSize": "45px",
+      "align": "4",
+      "text": "Jest nas już ${tempVars(\"members\")} osób!",
+      "name": "Canvas Draw Text on Image"
+    },
+    {
+      "storage": "1",
+      "varName": "welcome",
+      "channel": "103",
+      "varName2": "ID_KANAŁU_DO_WIADOMOŚCI",
+      "message": "\n",
+      "compress": "4",
+      "spoiler": "0",
+      "storage2": "0",
+      "varName3": "",
+      "name": "Canvas Send Image"
+    }
+  ]
+}
